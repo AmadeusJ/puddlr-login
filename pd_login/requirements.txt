@@ -1,0 +1,9 @@
+django>=2.2
+djangorestframework
+django-rest-swagger
+django-webpack-loader
+django-cors-headers
+coverage
+unipath
+requests
+pycryptodome

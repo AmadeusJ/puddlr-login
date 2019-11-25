@@ -1,0 +1,46 @@
+{% load static %}
+{% load render_bundle from webpack_loader %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Puddlr</title>
+        <!-- Import static 'js' libraries -->
+        <script type="text/javascript" src="{% static "lib/jquery/dist/jquery.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "lib/popper.js/dist/umd/popper.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "lib/bootstrap/dist/js/bootstrap.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "lib/toastr/toastr.min.js" %}"></script>
+        <script type="text/javascript" src="{% static "lib/webfontloader/webfontloader.js" %}"></script>
+        <script type="text/javascript" src="{% static "lib/bowser/src/bowser.js" %}"></script>
+        <!-- Import static 'css' files -->
+        <link rel="stylesheet" type="text/css" href="{% static "lib/mdi/css/materialdesignicons.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "lib/animate.css/animate.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "lib/toastr/toastr.min.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "assets/bootstrap-custom.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "assets/loginpage-index.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "assets/loginpage-main.css" %}">
+        <link rel="stylesheet" type="text/css" href="{% static "assets/loginpage-navigator.css" %}">
+
+        <!-- Additional load -->
+        <script type="text/javascript">
+
+            // Font Import
+            WebFont.load({
+                google: {
+                    families: ['Noto Sans KR']
+                },
+                custom: {
+                    families: ['Nanum Barun Gothic'],
+                    urls: ['/static/fonts/nanumbarungothic.css']
+                }
+            });
+            
+        </script>
+    </head>
+    <body class="login-body">
+        <div id="root">
+            <!-- ReactDOM -->
+        </div>
+        {% render_bundle 'main' 'js' %}
+    </body>
+</html>

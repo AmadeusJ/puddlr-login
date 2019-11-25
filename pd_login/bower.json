@@ -1,0 +1,16 @@
+{
+    "name": "puddlr.messaging",
+    "dependencies": {
+        "bootstrap": "v4.0.0-beta",
+        "bootstrap-toggle": "",
+        "moment": "",
+        "filereader": "",
+        "webfontloader": "",
+        "toastr": "",
+        "sass-flex-mixin": "",
+        "mdi": "1.8.36",
+        "bowser": "^1.7.3",
+        "animate.css": "",
+        "popper.js": ""
+    }
+}

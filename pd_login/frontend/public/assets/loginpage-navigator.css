@@ -1,0 +1,221 @@
+@media screen and (max-width: 991px) {
+    .is-hidden-touch {
+        display: none !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .is-hidden-desktop {
+        display: none !important;
+    }
+}
+
+.wf-loading {
+    visibility: hidden;
+}
+
+.wf-active.wf-notosanskr-n4-active .nav-container button,
+.wf-active.wf-notosanskr-n4-active .nav-container input,
+.wf-active.wf-notosanskr-n4-active .nav-container select,
+.wf-active.wf-notosanskr-n4-active .nav-container textarea {
+     font-family: "Noto Sans KR", sans-serif; 
+}
+
+body,
+button,
+input,
+select,
+textarea,
+a,
+a:visited {
+    color: #222; 
+}
+
+.nav-container,
+.nav-container .button,
+.nav-container .input,
+.nav-container .textarea,
+.nav-container .select select,
+.nav-container .file-cta,
+.nav-container .file-name,
+.nav-container .pagination-previous,
+.nav-container .pagination-next,
+.nav-container .pagination-link,
+.nav-container .pagination-ellipsis,
+.nav-container .label,
+.nav-container .control,
+.nav-container .breadcrumb,
+.nav-container .menu,
+.nav-container .message,
+.nav-container .pagination,
+.nav-container .panel,
+.nav-container .tabs {
+    font-size: 17px; 
+}
+
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+    padding-top: 68px; 
+}
+
+html.has-navbar-fixed-bottom,
+body.has-navbar-fixed-bottom {
+    padding-bottom: 68px; 
+}
+
+
+html,
+body.login-body {
+    background-color: #f2f4f6; 
+}
+
+img:only-child {
+    vertical-align: middle; 
+}
+  
+.is-chip-proof { word-break: keep-all; }
+.is-clickable { cursor: pointer; }
+
+.has-clickable-bezel {
+    padding-left: 5px;
+    padding-right: 5px; 
+}
+
+@media screen and (min-width: 992px) {
+    html.has-navbar-fixed-top,
+    body.has-navbar-fixed-top {
+        padding-top: 75px; 
+    }
+    .nav-content {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto; 
+    } 
+}
+
+.nav-container {
+    position: fixed;
+    z-index: 30;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: 0px 1px 0px 0px #e0e0e0;
+    background-color: #fff; 
+}
+
+.nav-content { height: 68px; }
+
+.menu-special {
+    position: relative;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 25px;
+    background-color: #fff; 
+}
+
+.menu-background { display: none; }
+  
+.menu-container {
+    position: relative;
+    background-color: #fff; 
+}
+  
+.menu-wrapper .menu-content { white-space: nowrap; }
+  
+
+.demo-user-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+  
+.demo-content {
+    margin-bottom: 15px;
+    border-radius: 5px;
+    padding: 20px 0;
+    background-color: #fff;
+    box-shadow: 4px 4px 12px 4px rgba(0, 0, 0, 0.1); 
+}
+.demo-content.is-manager { background-color: #b398ff; }
+.demo-content.is-member { background-color: #00d9cc; }
+
+
+.member-information {
+    display: flex;
+    align-items: center;
+    padding: 0 35px;
+    text-align: left; 
+}
+.member-information .member-field {
+    width: 32px;
+    color: #fff95f;
+    font-size: 15px; 
+}
+.member-information .member-value {
+    flex: 1;
+    color: #fff; 
+}
+
+
+@media screen and (max-width: 991px) {
+    .nav-wrapper.is-active .menu-background {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: block;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+    .nav-wrapper.is-active .menu-container {
+        overflow: auto;
+        width: 100%;
+        max-height: calc(100vh - 68px); 
+    }
+    .nav-wrapper.is-active .menu-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+    }
+    .nav-wrapper.is-active .menu-wrapper:last-child { margin-bottom: 95px; }
+    .nav-wrapper.is-active .menu-wrapper .menu-content {
+        margin-top: 40px;
+        font-size: 20px; 
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .nav-wrapper { padding: 0 25px; }
+    .nav-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 75px; 
+    }
+    .menu-special {
+        width: auto;
+        height: auto;
+        padding: 0; 
+    }
+    .menu-container {
+        flex: 1;
+        display: flex;
+        justify-content: flex-end; 
+    }
+    .menu-wrapper {
+        display: flex;
+        align-items: center; 
+    }
+    .menu-wrapper:last-child { margin-right: -5px; }
+    .menu-wrapper .menu-content { margin-left: 35px; } 
+}
+
+
+  
+
+
